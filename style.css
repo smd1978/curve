@@ -1,0 +1,44 @@
+html,body,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery {
+   width: 320px;
+   margin: 0 auto;
+   text-align: center;
+   height: auto;
+}
+
+#gallery .photos {
+    height: 480px; 
+    position: relative;
+}
+
+#gallery .photos img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+#gallery .photos img.showed {
+   opacity: 1;
+}
+
+.items{
+    display: flex;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.item-active{
+    border: 3px solid darkcyan;
+    width: 95px;
+    height: 95px;
+}
